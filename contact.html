@@ -1,95 +1,95 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تواصل معنا</title>
+    <title>Contact Us</title>
 </head>
 <body>
 
     <header>
-        <h1>موقعنا الإلكتروني</h1>
+        <h1>My Website</h1>
         <nav>
-            <a href="index.html">الرئيسية</a> |
-            <a href="about.html">من نحن</a> |
-            <a href="contact.html">تواصل معنا</a>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
-        <h2>تواصل معنا</h2>
-        <p>يرجى ملء النموذج التالي للتواصل معنا:</p>
+        <h2>Contact Us</h2>
+        <p>Please fill out the following form to contact us:</p>
 
         <form action="#" method="post">
             <!-- Text Input -->
             <p>
-                <label for="fullname">الاسم الكامل:</label><br>
+                <label for="fullname">Full Name:</label><br>
                 <input type="text" id="fullname" name="fullname" required>
             </p>
 
             <!-- Email Input -->
             <p>
-                <label for="email">البريد الإلكتروني:</label><br>
+                <label for="email">Email Address:</label><br>
                 <input type="email" id="email" name="email" required>
             </p>
 
             <!-- Number Input -->
             <p>
-                <label for="age">العمر:</label><br>
+                <label for="age">Age:</label><br>
                 <input type="number" id="age" name="age" min="1" max="120">
             </p>
 
             <!-- Date Input -->
             <p>
-                <label for="contact-date">تاريخ المراسلة:</label><br>
+                <label for="contact-date">Contact Date:</label><br>
                 <input type="date" id="contact-date" name="contact-date">
             </p>
 
             <!-- Radio Buttons -->
             <p>
-                <label>طريقة التواصل المفضلة:</label><br>
+                <label>Preferred Contact Method:</label><br>
                 <input type="radio" id="pref-email" name="preferred_contact" value="email" checked>
-                <label for="pref-email">البريد الإلكتروني</label>
+                <label for="pref-email">Email</label>
                 
                 <input type="radio" id="pref-phone" name="preferred_contact" value="phone">
-                <label for="pref-phone">الهاتف</label>
+                <label for="pref-phone">Phone</label>
             </p>
 
             <!-- Checkboxes -->
             <p>
-                <label>الاهتمامات (يمكنك اختيار أكثر من خيار):</label><br>
+                <label>Interests (Select multiple):</label><br>
                 <input type="checkbox" id="interest-news" name="interests" value="news">
-                <label for="interest-news">الأخبار</label>
+                <label for="interest-news">News</label>
                 
                 <input type="checkbox" id="interest-tech" name="interests" value="tech">
-                <label for="interest-tech">التكنولوجيا</label>
+                <label for="interest-tech">Technology</label>
             </p>
 
             <!-- Select Dropdown -->
             <p>
-                <label for="reason">سبب التواصل:</label><br>
+                <label for="reason">Reason for Contact:</label><br>
                 <select id="reason" name="reason">
-                    <option value="general">استفسار عام</option>
-                    <option value="support">الدعم الفني</option>
-                    <option value="feedback">اقتراحات وملاحظات</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="feedback">Feedback & Suggestions</option>
                 </select>
             </p>
 
             <!-- Textarea -->
             <p>
-                <label for="message">الرسالة:</label><br>
+                <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="5" cols="40" required></textarea>
             </p>
 
             <!-- Submit Button -->
             <p>
-                <button type="submit">إرسال الرسالة</button>
+                <button type="submit">Send Message</button>
             </p>
         </form>
     </main>
 
     <footer>
-        <p>&copy; 2026 جميع الحقوق محفوظة لموقعي</p>
+        <p>&copy; 2026 All Rights Reserved</p>
     </footer>
 
 </body>
