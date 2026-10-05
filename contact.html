@@ -1,118 +1,95 @@
-<nav>
-  <a href="index.html">الرئيسية</a> |
-  <a href="about.html">من نحن</a> |
-  <a href="contact.html">تواصل معنا</a>
-</nav>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تواصل معنا</title>
-    <!-- ربط ملف الـ CSS الخاص بموقعك لضمان التناسق -->
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- الهيدر والقائمة الرئيسية (يجب أن يماثل بقية الصفحات) -->
     <header>
+        <h1>موقعنا الإلكتروني</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="contact.html">تواصل معنا</a></li>
-            </ul>
+            <a href="index.html">الرئيسية</a> |
+            <a href="about.html">من نحن</a> |
+            <a href="contact.html">تواصل معنا</a>
         </nav>
     </header>
 
     <main>
-        <h1>اتصل بنا</h1>
+        <h2>تواصل معنا</h2>
         <p>يرجى ملء النموذج التالي للتواصل معنا:</p>
 
         <form action="#" method="post">
-            <!-- 1. مدخل نصي (Text) -->
-            <div>
-                <label for="fullname">الاسم الكامل:</label>
+            <!-- Text Input -->
+            <p>
+                <label for="fullname">الاسم الكامل:</label><br>
                 <input type="text" id="fullname" name="fullname" required>
-            </div>
+            </p>
 
-            <br>
-
-            <!-- 2. البريد الإلكتروني (Email) -->
-            <div>
-                <label for="email">البريد الإلكتروني:</label>
+            <!-- Email Input -->
+            <p>
+                <label for="email">البريد الإلكتروني:</label><br>
                 <input type="email" id="email" name="email" required>
-            </div>
+            </p>
 
-            <br>
+            <!-- Number Input -->
+            <p>
+                <label for="age">العمر:</label><br>
+                <input type="number" id="age" name="age" min="1" max="120">
+            </p>
 
-            <!-- 3. الرقم (Number) -->
-            <div>
-                <label for="age">العمر:</label>
-                <input type="number" id="age" name="age" min="18" max="100">
-            </div>
-
-            <br>
-
-            <!-- 4. التاريخ (Date) -->
-            <div>
-                <label for="contact-date">تاريخ المراسلة:</label>
+            <!-- Date Input -->
+            <p>
+                <label for="contact-date">تاريخ المراسلة:</label><br>
                 <input type="date" id="contact-date" name="contact-date">
-            </div>
+            </p>
 
-            <br>
-
-            <!-- 5. أزرار الاختيار (Radio Buttons) -->
-            <div>
-                <p>طريقة التواصل المفضلة:</p>
+            <!-- Radio Buttons -->
+            <p>
+                <label>طريقة التواصل المفضلة:</label><br>
                 <input type="radio" id="pref-email" name="preferred_contact" value="email" checked>
                 <label for="pref-email">البريد الإلكتروني</label>
-
+                
                 <input type="radio" id="pref-phone" name="preferred_contact" value="phone">
                 <label for="pref-phone">الهاتف</label>
-            </div>
+            </p>
 
-            <br>
+            <!-- Checkboxes -->
+            <p>
+                <label>الاهتمامات (يمكنك اختيار أكثر من خيار):</label><br>
+                <input type="checkbox" id="interest-news" name="interests" value="news">
+                <label for="interest-news">الأخبار</label>
+                
+                <input type="checkbox" id="interest-tech" name="interests" value="tech">
+                <label for="interest-tech">التكنولوجيا</label>
+            </p>
 
-            <!-- 6. مربعات الاختيار (Checkboxes) -->
-            <div>
-                <p>الاهتمامات (يمكنك اختيار أكثر من خيار):</p>
-                <input type="checkbox" id="news" name="interests" value="news">
-                <label for="news">الأخبار</label>
-
-                <input type="checkbox" id="tech" name="interests" value="tech">
-                <label for="tech">التكنولوجيا</label>
-            </div>
-
-            <br>
-
-            <!-- 7. القائمة المنسدلة (Dropdown - Select) -->
-            <div>
-                <label for="subject">سبب التواصل:</label>
-                <select id="subject" name="subject">
+            <!-- Select Dropdown -->
+            <p>
+                <label for="reason">سبب التواصل:</label><br>
+                <select id="reason" name="reason">
                     <option value="general">استفسار عام</option>
                     <option value="support">الدعم الفني</option>
                     <option value="feedback">اقتراحات وملاحظات</option>
                 </select>
-            </div>
+            </p>
 
-            <br>
-
-            <!-- 8. نص كبير (Textarea) -->
-            <div>
+            <!-- Textarea -->
+            <p>
                 <label for="message">الرسالة:</label><br>
-                <textarea id="message" name="message" rows="5" cols="40" placeholder="اكتب رسالتك هنا..." required></textarea>
-            </div>
+                <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+            </p>
 
-            <br>
-
-            <button type="submit">إرسال الرسالة</button>
+            <!-- Submit Button -->
+            <p>
+                <button type="submit">إرسال الرسالة</button>
+            </p>
         </form>
     </main>
 
-    <!-- التذييل (Footer) -->
     <footer>
-        <p>&copy; 2026 جميع الحقوق محفوظة لموقعي.</p>
+        <p>&copy; 2026 جميع الحقوق محفوظة لموقعي</p>
     </footer>
 
 </body>
