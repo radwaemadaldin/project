@@ -3,95 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-        <link rel="stylesheet" href="style.css">
-
+    <title>Contact Us - My Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>My Website</h1>
+        <h1>Contact Us</h1>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Contact Us</h2>
-        <p>Please fill out the following form to contact us:</p>
+        <section>
+            <h2>Contact Form</h2>
+            <p>Please fill out the following form to contact us:</p>
 
-        <form action="#" method="post">
-            <!-- Text Input -->
-            <p>
-                <label for="fullname">Full Name:</label><br>
-                <input type="text" id="fullname" name="fullname" required>
-            </p>
+            <form action="#" method="post">
+                <!-- Text Input -->
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
 
-            <!-- Email Input -->
-            <p>
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required>
-            </p>
+                <!-- Email Input -->
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
 
-            <!-- Number Input -->
-            <p>
-                <label for="age">Age:</label><br>
-                <input type="number" id="age" name="age" min="1" max="120">
-            </p>
+                <!-- Number Input -->
+                <p>
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" min="1" max="120">
+                </p>
 
-            <!-- Date Input -->
-            <p>
-                <label for="contact-date">Contact Date:</label><br>
-                <input type="date" id="contact-date" name="contact-date">
-            </p>
+                <!-- Date Input -->
+                <p>
+                    <label for="contact-date">Contact Date:</label><br>
+                    <input type="date" id="contact-date" name="contact-date">
+                </p>
 
-            <!-- Radio Buttons -->
-            <p>
-                <label>Preferred Contact Method:</label><br>
-                <input type="radio" id="pref-email" name="preferred_contact" value="email" checked>
-                <label for="pref-email">Email</label>
-                
-                <input type="radio" id="pref-phone" name="preferred_contact" value="phone">
-                <label for="pref-phone">Phone</label>
-            </p>
+                <!-- Radio Buttons -->
+                <p>
+                    <label>Preferred Contact Method:</label><br>
+                    <input type="radio" id="pref-email" name="preferred_contact" value="email" checked>
+                    <label for="pref-email">Email</label>
+                    
+                    <input type="radio" id="pref-phone" name="preferred_contact" value="phone">
+                    <label for="pref-phone">Phone</label>
+                </p>
 
-            <!-- Checkboxes -->
-            <p>
-                <label>Interests (Select multiple):</label><br>
-                <input type="checkbox" id="interest-news" name="interests" value="news">
-                <label for="interest-news">News</label>
-                
-                <input type="checkbox" id="interest-tech" name="interests" value="tech">
-                <label for="interest-tech">Technology</label>
-            </p>
+                <!-- Checkboxes -->
+                <p>
+                    <label>Interests (Select multiple):</label><br>
+                    <input type="checkbox" id="interest-news" name="interests" value="news">
+                    <label for="interest-news">News</label>
+                    
+                    <input type="checkbox" id="interest-tech" name="interests" value="tech">
+                    <label for="interest-tech">Technology</label>
+                </p>
 
-            <!-- Select Dropdown -->
-            <p>
-                <label for="reason">Reason for Contact:</label><br>
-                <select id="reason" name="reason">
-                    <option value="general">General Inquiry</option>
-                    <option value="support">Technical Support</option>
-                    <option value="feedback">Feedback & Suggestions</option>
-                </select>
-            </p>
+                <!-- Select Dropdown -->
+                <p>
+                    <label for="reason">Reason for Contact:</label><br>
+                    <select id="reason" name="reason">
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Technical Support</option>
+                        <option value="feedback">Feedback & Suggestions</option>
+                    </select>
+                </p>
 
-            <!-- Textarea -->
-            <p>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" cols="40" required></textarea>
-            </p>
+                <!-- Textarea -->
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+                </p>
 
-            <!-- Submit Button -->
-            <p>
-                <button type="submit">Send Message</button>
-            </p>
-        </form>
+                <!-- Submit Button -->
+                <p>
+                    <button type="submit">Send Message</button>
+                </p>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 All Rights Reserved</p>
+        <p>&copy; 2026 My Web Project. All rights reserved.</p>
     </footer>
 
 </body>
